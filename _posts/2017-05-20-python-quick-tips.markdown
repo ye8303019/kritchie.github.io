@@ -1,15 +1,19 @@
 ---
 layout: post
-title:  "My Python workflow"
+title:  "Starting with Python: Quick workflow tips"
 date:   2017-05-20 14:27:00 +0800
 categories: jekyll update
 ---
 
-Start of 2016, I moved to China to pursue a new position at a start-up company. That’s where I started to play with something called “Big Data”. I was traditionally more oriented on embedded systems and robotics, so my experience in Data Engineering was close to 0. The learning curve was steep. 
+In 2016 I moved to China to pursue a new position at a start-up company. Not only was I moving into a new country, that’s also where I started to play with something called “Big Data”. I was traditionally more oriented on embedded systems and robotics, so my experience in Data Engineering was close to 0. The learning curve was kinda steep.
 
-In this article I'll highlight 3 quick tips I have for people who are starting to program in Python. I believe this will help you define a workflow that works for you that will help you and make it more enjoyable to program in Python.
+Something that I found pretty quickly while starting to explore Big Data, is that the Python programming language is widely adopted. I used to be somewhat versed in C/C++ and JAVA, but unfortunately not in Python. Learning how to program Python was definitely not an option. So I had to go through the basics of Python to get up to speed and to make sure my code was following the Python best practices as much as possible.
 
-Something that I found pretty quickly while starting to explore Big Data, is that the Python programming languages is widely adopted and very popular. I had to learn how to program Python. I used to be somewhat versed in C/C++ and JAVA, but unfortunately not in Python. The first thing I did was to learn about different versions of Python. Then I managed to learn how to properly create and deploy Python programs.  
+Learning the language made me realize that Python handles a ton of stuff for you and does the extra work in many situations. Especially if you compare it to a language like C. This makes it very convenient and very fun to learn. 
+
+After going through the "normal" things, like data structures, if/else, for loops, etc., I had to learn about how to properly create and deploy Python programs. This might not sound like it, but it's one the things I found the most helpful while trying to learn Python. When everything is well managed, keep things clean is way easier.
+
+In this article I'll highlight 3 quick tips I have for people who are starting to program in Python like I was one year ago. I hope this will help you define a workflow that works for you that will help you enjoy programming in Python even more.
 
 <br/>
 
@@ -21,7 +25,7 @@ Something that I found pretty quickly while starting to explore Big Data, is tha
 
 <br/>
 
-# Virtual environment is your friend
+# Tip 1: Virtual environment is your friend
 
 I learned pretty quickly about using virtual environments while programming Python. This as helped me in so much ways and saved a lot of time and headache. You should use virtual environments if you are programming in Python. 
 
@@ -29,13 +33,13 @@ So what is a virtual environment ? Well, you can think of it as a virtual machin
 
 It's also very easy to use different versions of Python depending on your project's requirements, because every time you create a project, you also create a virtual environment specific to it. 
 
-### TODO INSERT DIAGRAM HERE
+![Sample virtual environment diagram](/assets/virtual_env.png){:class="img-responsive"}
 
 Python virtual environments come in many flavors, again it's a question of which one works the best for you. Personally I really love [virtualenv](https://virtualenv.pypa.io/en/stable/) with [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) but there's also other virtual environments tools like [PyEnv](https://github.com/pyenv/pyenv) and [Conda](https://conda.io/docs/index.html) that can even support other languages than Python.
 
 <br/>
 
-# Project scaffolding tool, a must
+# Tip 2: Project scaffolding tool, a must
 
 Something that helped me a lot to be up to speed with Python development was to define a workflow. This meant a way to prepare the projects and a way to properly test and deploy programs in Python. You should look for a project scaffolding tool in order to automate project creation. The ones that come to my mind are : 
 
@@ -86,7 +90,7 @@ Most of the files are self-explanatory, but you should go read the [PyScaffold p
 
 <br/>
 
-# Quick access code snippets 
+# Tip 3: Quick access code snippets 
 
 I found out that defining some easy to access templates was one of the best thing I did to increase my productivity. What I did was to create an HTML where I stored those templates as plain text. The goal was to make it accessible through my Web browser, because let's face it, my Web browser is pretty much always open. Here's an example of what I've put in this template pages :
 
@@ -119,4 +123,17 @@ logger = logging.getLogger(logger_name)
 # logger.addHandler(handler)
 {% endhighlight %}
 
-This is the boiler plate that I use for most of my Python files. Having quick access to this is really helpful and it helps keep every files somewhat standardized. So basically I just translated the Python code to HTML, saved that to a file on my computer and added a bookmark to it in my browser. 
+This is the boiler plate that I use for most of my Python files. Some of you will notice that at the beginning of the file I have some imports from the future library. This is because some of the code base I use still has some Python 2.7 dependencies and I want to make my code retro-compatible. So if for some reason Python 3.* is not installed on your computer and you can't install it, you'll still be able to run the code that contains this header. This should not happen too often.
+
+This is helpful because I already declare things like the license and I initialize the logger. Most of the time I use logging instead of the print function. This is a good practice to keep and especially when you want to save the logs to a file. You just add the correct log handler to your logger and the libary will take care of that for you, pretty neat. 
+
+Having quick access to this is really helpful and it helps keep every files somewhat standardized. So basically I just translated the Python code to HTML, saved that to a file on my computer and added a bookmark to it in my browser. 
+
+# Recap
+
+So basically that's it for now. These are 3 small tips I have for anyone starting to program in Python that will contribute to having a better workflow. 
+
+* Install a virtual environment tool, this will decouple each project from your system's Python.
+* Use a project scaffolding tool, this will standardize all your projects folder.
+* Quick access code templates, this will increase your coding experience and standardize your python files.
+
