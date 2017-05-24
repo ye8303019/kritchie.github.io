@@ -5,7 +5,7 @@ date:   2017-05-20 14:27:00 +0800
 categories: jekyll update
 ---
 
-**Target audience:** This article is oriented towards people starting to use Python as a programming language. I present some quick workflow tips to get you started. Experts probably won't find it of much interests. 
+**Target audience:** This article is oriented towards people starting to use Python as a programming language. I present some quick workflow tips to get you started.  
 
 ---
 
