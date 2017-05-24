@@ -5,37 +5,37 @@ date:   2017-05-20 14:27:00 +0800
 categories: jekyll update
 ---
 
-**Target audience:** This article is more oriented towards people starting to use Python as a programming language and want to have some quick workflow tips. Experts probably won't find it of much interests. 
+**Target audience:** This article is oriented towards people starting to use Python as a programming language. I present some quick workflow tips to get you started. Experts probably won't find it of much interests. 
 
 ---
 
 <br/>
 <br/>
 
-In 2016, I moved to China to pursue a new position at a start-up company. Not only was I moving into a new country, that’s also where I started to play with something called “Big Data”. I was traditionally more oriented on embedded systems and robotics, so my experience in Data Engineering was close to 0. The learning curve was kinda steep.
+In 2016, I moved to China to pursue a new position at a start-up company. Not only was I moving into a new country, that’s also where I started to play with something called “Big Data”. I was traditionally more oriented on embedded systems and robotics, so my experience in anything related to "Big Data" was pretty much null. The learning curve was kinda steep.
 
-Something that I found pretty quickly while starting to explore Big Data, is that the Python programming language is widely adopted. I used to be somewhat versed in C/C++ and JAVA, but unfortunately not in Python. Learning how to program Python was definitely not an option. So I had to go through the basics of Python to get up to speed and to make sure my code was following the Python best practices as much as possible.
+Needless to say, Python is widely adopted in the Big Data world. Learning how to program Python was definitely a big plus if you want to be efficient. I used to be somewhat versed in C/C++ and JAVA, but unfortunately not in Python. So I had to go through the basics of Python to get up to speed. 
 
 Learning the language made me realize that Python handles a ton of stuff for you and does the extra work in many situations. Especially if you compare it to a language like C. This makes it very convenient and very fun to learn. 
 
-After going through the "normal" things, like data structures, if/else, for loops, etc., I had to learn about how to properly create and deploy Python programs. This might not sound like it, but it's one the things I found the most helpful while trying to learn Python. When everything is well managed, keep things clean is way easier.
+After going through the "normal" things, like data structures, if/else, for loops, etc., I had to learn about how to properly create and deploy Python programs. This might not sound like it, but it's one the things I found the most helpful while trying to learn Python. When everything is well managed, keeping things clean is much more easy.
 
-In this article I'll highlight 3 quick tips I have for people who are starting to program in Python like I was one year ago. I hope this will help you define a workflow that works for you that will help you enjoy programming in Python even more.
+In this article I'll highlight 3 quick tips I have for people who are starting to program in Python. I hope this will help you define a workflow that works for you that will help you enjoy programming in Python even more.
 
 
 <br/>
 
-# Tip 1: Virtual environment is your friend
+# Tip 1: Virtual environments are your friends
 
-I learned pretty quickly about using virtual environments while programming Python. This as helped me in so many ways and saved a lot of time and headache. You should use virtual environments if you are programming in Python. 
+I learned pretty quickly about using virtual environments while programming Python. This as helped me in so many ways and saved a lot of time and headaches. You should use virtual environments if you are programming in Python. 
 
-So what is a virtual environment ? Well, you can think of it as a virtual machine for Python. The goal of a virtual environment is to decouple the system's Python with your project's Python. This way, you don't clobber your system's Python with the dependencies of every single projects you are working on. Each project will have its own separate location to store the dependencies. 
+So what are virtual environments ? Well, you can think of it as virtual machines for Python. The goal of a virtual environment is to decouple the system's Python from your project's Python. This way, you don't clobber your system's Python with the dependencies of every single projects you are working on. Each project will have its own separate location to store the dependencies. 
 
-It's also very easy to use different versions of Python depending on your project's requirements, because every time you create a project, you also create a virtual environment specific to it. 
+It's also very easy to use different versions of Python depending on your project's requirements. Every time you create a project, you also create a virtual environment specific to it. 
+
+Python virtual environments come in many flavors, again it's a question of which one works the best for you. Personally I enjoy [virtualenv](https://virtualenv.pypa.io/en/stable/) with the [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/). There are also other virtual environments tools like [PyEnv](https://github.com/pyenv/pyenv) and [Conda](https://conda.io/docs/index.html) that can even support other languages than Python.
 
 <img src="{{ site.github.url }}/assets/virtual_env.png"/>
-
-Python virtual environments come in many flavors, again it's a question of which one works the best for you. Personally I really love [virtualenv](https://virtualenv.pypa.io/en/stable/) with [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) but there's also other virtual environments tools like [PyEnv](https://github.com/pyenv/pyenv) and [Conda](https://conda.io/docs/index.html) that can even support other languages than Python.
 
 <br/>
 
@@ -133,5 +133,5 @@ So basically that's it for now. These are 3 small tips I have for anyone startin
 
 * Install a virtual environment tool, this will decouple each project from your system's Python.
 * Use a project scaffolding tool, this will standardize all your projects folder.
-* Quick access code templates, this will increase your coding experience and standardize your python files.
+* Quick access code templates, this will increase your coding experience and help you standardize your code.
 
