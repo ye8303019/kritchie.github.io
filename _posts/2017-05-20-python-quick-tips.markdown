@@ -33,7 +33,7 @@ So what is a virtual environment ? Well, you can think of it as a virtual machin
 
 It's also very easy to use different versions of Python depending on your project's requirements, because every time you create a project, you also create a virtual environment specific to it. 
 
-![Sample virtual environment diagram](/assets/virtual_env.png){:class="img-responsive"}
+<img src="{{ site.baseurl }}/assets/virtual_env.png">
 
 Python virtual environments come in many flavors, again it's a question of which one works the best for you. Personally I really love [virtualenv](https://virtualenv.pypa.io/en/stable/) with [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) but there's also other virtual environments tools like [PyEnv](https://github.com/pyenv/pyenv) and [Conda](https://conda.io/docs/index.html) that can even support other languages than Python.
 
