@@ -18,18 +18,18 @@ Needless to say, Python is widely adopted in the Big Data world. Learning how to
 
 Learning the language made me realize that Python handles a ton of stuff for you and does the extra work in many situations. Especially if you compare it to a language like C. This makes it very convenient and very fun to learn. 
 
-After going through the "normal" things, like data structures, if/else, for loops, etc., I had to learn about how to properly create and deploy Python programs. This might not sound like it, but it's one the things I found the most helpful while trying to learn Python. When everything is well managed, keeping things clean is much more easy.
+After going through the "normal" things, like data structures, if/else, for loops, etc., I had to learn about how to properly create and deploy Python programs. It's very convenient and when everything is well managed, keeping things clean is much more easy.
 
-In this article I'll highlight 3 quick tips I have for people who are starting to program in Python. I hope this will help you define a workflow that works for you that will help you enjoy programming in Python even more.
+In this article I'll highlight 3 quick tips for people who are starting to program in Python. I hope this will help you define a workflow that works for you so you can enjoy programming in Python even more.
 
 
 <br/>
 
 # Tip 1: Virtual environments are your friends
 
-I learned pretty quickly about using virtual environments while programming Python. This as helped me in so many ways and saved a lot of time and headaches. You should use virtual environments if you are programming in Python. 
+I learned pretty quickly about using virtual environments while using Python. This as helped me in so many ways and saved a lot of time and headaches.  
 
-So what are virtual environments ? Well, you can think of it as virtual machines for Python. The goal of a virtual environment is to decouple the system's Python from your project's Python. This way, you don't clobber your system's Python with the dependencies of every single projects you are working on. Each project will have its own separate location to store the dependencies. 
+So what are virtual environments? Well, you can think of it as virtual machines for Python. The goal of a virtual environment is to decouple the system's Python from your project's Python. This way, you don't clobber your system's Python with the dependencies of every single projects you are working on. Each project will have its own separate location to store the dependencies. 
 
 It's also very easy to use different versions of Python depending on your project's requirements. Every time you create a project, you also create a virtual environment specific to it. 
 
