@@ -89,12 +89,12 @@ class PaperFetcher(luigi.Task):
 
         count = 0
         entries = self.query(offset=count)
-        while entries and len(entries) > 0 and count < self.max_documents:
-            with self.output().open('w') as output:
+        with self.output().open('w') as output:
+            while entries and len(entries) > 0 and count < self.max_documents:
                 for entry in entries:
                     output.write(str.encode(json.dumps(entry) + '\n'))
-            count += len(entries)
-            entries = self.query(offset=count)
+                count += len(entries)
+                entries = self.query(offset=count)
         return
 
 {% endhighlight %}
