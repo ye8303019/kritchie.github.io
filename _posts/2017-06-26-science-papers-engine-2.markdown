@@ -11,7 +11,7 @@ In my previous blog post I presented a small ArXiv science paper retrieval proje
 
 The process of data transformation is simply the fact of applying operations on the raw data before storing it. It can be anything from cleaning, formatting or aggregating your data with other data sources. 
 
-In our case, since the goal is to build a basic NLP pipeline, our main pre-processing will be to separate sentences into words. For those who are not familiar, NLP stands for <b>Natural Language Processing</b> which is a specialty of the Linguistic field. To give a better idea, an NLP pipeline would be a series of small functions or algorithms that would be executed on some raw text, with the goal of extracting meaningful information. 
+In our case, since the goal is to build a basic NLP pipeline, our main pre-processing will be to separate sentences into words (also called "<i>tokenization</i>". For those who are not familiar, NLP stands for <b>Natural Language Processing</b> which is a specialty of the linguistic field. To give a better idea, an NLP pipeline is a series of small functions or algorithms that would be executed on some raw text, with the goal of extracting meaningful information. 
 
 <img src="{{ site.github.url }}/assets/nlp_pipeline.png"/>
 <br/>
@@ -96,7 +96,7 @@ In general (and when you have sufficient data), the more a word in uncommon, the
 
 ## How to do that using Python ?  
 
-Python is a fantastic tool that can do all sorts of things. Because of that, a lot of people have built incredible tools and libraries. One of them is called [Gensim](www.gensim.com). Gensim includes lots and lots of features that are used to do topic modeling. That’s the library that I chose to build the dictionary because it's very simple and yet very powerful. You have the ability to load/save/update a model, which is what I needed for my pipeline. It's also widely used and well maintained/documented. 
+Python is a fantastic tool that can do all sorts of things. Because of that, a lot of people have built incredible tools and libraries. One of them is called [Gensim](www.gensim.com). Gensim includes lots and lots of features that are used to do text processing. That’s the library that I chose to build the dictionary because it's very simple and yet very powerful. You have the ability to load/save/update a model, which is what I needed for my pipeline. It's also widely used and well maintained/documented. 
 
 {% highlight python  %}
 
@@ -128,7 +128,7 @@ Putting it all in one piece, what we have is a small pipeline able to perform tw
 
 <img src="{{ site.github.url }}/assets/paper_retrieval_pipeline_overview.png"/>
 
-Here’s the full code including both operations.
+Here’s the small script that includes both operations.
 
 {% highlight python  %}
 
