@@ -11,7 +11,7 @@ In my previous blog post I presented a small ArXiv science paper retrieval proje
 
 The process of data transformation is simply the fact of applying operations on the raw data before storing it. It can be anything from cleaning, formatting or aggregating your data with other data sources. 
 
-In our case, since the goal is to build a basic NLP pipeline, our main pre-processing will be to separate sentences into words (also called "<i>tokenization</i>". For those who are not familiar, NLP stands for <b>Natural Language Processing</b> which is a specialty of the linguistic field. To give a better idea, an NLP pipeline is a series of small functions or algorithms that would be executed on some raw text, with the goal of extracting meaningful information. 
+In our case, since the goal is to build a basic NLP pipeline, our main pre-processing will be to separate sentences into words (also called "<i>tokenization</i>"). For those who are not familiar, NLP stands for <b>Natural Language Processing</b> which is a specialty of the linguistic field. To give a better idea, an NLP pipeline is a series of small functions or algorithms that would be executed on some raw text, with the goal of extracting meaningful information. 
 
 <img src="{{ site.github.url }}/assets/nlp_pipeline.png"/>
 <br/>
