@@ -18,7 +18,7 @@ In our case, since the goal is to build a basic NLP pipeline, our main pre-proce
 <i>(Source: [Introduction to NLP - Part 1: Overview](http://mattfortier.me/2017/01/31/nlp-intro-pt-1-overview/). If you want to know more about building an NLP pipeline, I suggest that you go take a look at the excellent [blog article](http://mattfortier.me/2017/01/31/nlp-intro-pt-1-overview/) about NLP pipelines. <b>As a disclaimer</b>: I personally know the author, but the blog post is still awesome and very well written.)</i>
 <br/><br/>
 
-So let's get back to our first pre-processing task. Why would we want to separate sentences into words? Well, imagine you want to create a sports’ news website and you want to break the articles into categories. What you could do, is to count the number of times the word “<i>hockey</i>” appears in a given article. After processing each articles, you would sort all of them by the highest occurrences of that word to build a list. You would then present this list sorted by occurrences of the word “<i>hockey</i>” to one of your users so he/she could read about his/her favorite sport. (<b>Interesting fact</b>: News articles about Hockey rarely mention the word "hockey" itself.)
+So let's get back to our first pre-processing task. Why would we want to separate sentences into words? Well, imagine you want to create a sports’ news website and you want to break the articles into categories. What you could do, is to count the number of times the word “<i>hockey</i>” appears in a given article. After processing each articles, you would sort all of them by the highest occurrences of that word to build a list. You would then present this list sorted by occurrences of the word “<i>hockey</i>” to one of your users so he/she could read about his/her favorite sport. (<b>Interesting fact</b>: News articles about Hockey rarely mention the word "hockey" itself, here's an example.)
 
 <br/>
 <img src="{{ site.github.url }}/assets/hockey_news.png" border="1"/>
@@ -26,7 +26,7 @@ So let's get back to our first pre-processing task. Why would we want to separat
 <i>(Source: [TheHockeyNews](http://www.thehockeynews.com/news/article/get-ready-for-a-lot-of-mistakes-to-be-made-on-july-1))</i> 
 <br/><br/>
 
-Of course, the reality is much more complex than that, but in the end it’s all about trying to extract some meaning or information from text. 
+Of course, the reality is much more complex than that and you would have to look at more things than simply words, but in the end it’s all about trying to extract some meaning or information from text. 
 
 ## Pre-Processing
 
