@@ -103,9 +103,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 import logging
 # Insert remaining lib imports here
 
-__author__ = 'Karl Ritchie <ritchie.karl@gmail.com>' 
 __license__ = 'MIT'
-
 
 logger_name = 'LOGGER_NAME_HERE' # FIXME : Change with correct name 
 logging.basicConfig(level=logging.INFO)
