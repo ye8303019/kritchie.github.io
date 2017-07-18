@@ -8,7 +8,7 @@ categories: jekyll update
 Lately I had a discussion with a colleague and I was explaining to him how one of our systems was built using message queues. I decided to make a blog post out of this discussion with the hope that some of you could benefit from that.
  
 # We need this ASAP !
-So many times, I hear about imaginary latency issues. Let me tell you something, not everything needs to be “real-time” or be accessed right now at this very nanosecond. Even if your system is not real-time, your system can still be fast to respond. It’s not a zero-sum game.
+So many times, I hear about imaginary latency issues. In reality, not everything needs to be “real-time” or be accessed right now at this very nanosecond. Even if your system is not real-time, it can still be fast to respond. It’s not a zero-sum game.
 
 <img src="{{ site.github.url }}/assets/decoupled.png"/> 
  
