@@ -12,7 +12,7 @@ So many times, I hear about imaginary latency issues. In reality, not everything
 
 <img src="{{ site.github.url }}/assets/decoupled.png"/> 
  
-Decoupling your system gives you time to re-adjust in cases something goes wrong with your back-end while your ingestion can still do it’s processing without interruption. It also deals with the spikes by stacking the processing tasks in the message queue. Your data processing will keep running nominally and will process those in due time.  What happens if you run out of space in your message queue and your data processing can’t keep up? Decouple more!
+Decoupling your system gives you time to re-adjust in cases something goes wrong with your back-end while your ingestion can still do its processing without interruption. It also deals with the spikes by stacking the processing tasks in the message queue. Your data processing will keep running nominally and will process those in due time.  What happens if you run out of space in your message queue and your data processing can’t keep up? Decouple more!
  
 <img src="{{ site.github.url }}/assets/decoupled_more.png"/>
 
